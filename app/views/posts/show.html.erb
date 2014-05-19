@@ -1,4 +1,4 @@
-<p>
+<section class="post"<p>
 	<strong>Title: </strong>
 	<%=  @post.title %>
 
@@ -6,7 +6,7 @@
 
 <p>
 	<strong >Text:</strong>
-	<%= @post.text %>
+	<%= @post.text.html_safe %>
 </p>
 
 <%= link_to 'Back', posts_path %> | <%= link_to 'Edit', edit_post_path(@post)%>

@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-	http_basci_authenticate_with name: 'kendoka', password: 'kendoka', except: [:index, :show]
+	http_basic_authenticate_with name: 'kendoka', password: 'kendoka', except: [:index, :show]
 
 	def new 
 		@post = Post.new

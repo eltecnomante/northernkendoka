@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Blog</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>El Kendoka Norteño</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
 
-<%= yield %>
+	</head>
+	<body>
 
-</body>
+		<header>
+			<h1>
+				El Kendoka Norteño				
+			</h1>
+			<h2 class="cita">
+				<a href="http://en.wikiquote.org/wiki/Musashi_Miyamoto#The_Ground_Book">
+					Si no observas las cosas a una escala mayor, te será dificil dominar la estrategia
+				</a>
+				<a href="http://en.wikipedia.org/wiki/Musashi_Miyamoto">
+					Musashi Miyamoto
+				</a> 
+			</h2>
+
+		</header>
+
+		<%= yield %>
+
+		<sidebar>
+			<section id="enlaces">
+				<h3>Referencias</h3>
+				<div class="enlace">
+					<a href="http:www.kendo-oviedo.com">Kendo Oviedo</a>
+				</div> 
+				<div class="enlace">
+				<a href="http:www.kendogijon.es">Kendo Gijon</a>
+								</div> 
+				<div class="enlace">
+								</div> 
+
+			</section>
+
+			<section id="social">
+				<ul>
+					<li id="twitter">
+						<a href="http://www.twitter.com/kendokanorteño">Twitter</a>
+					</li>
+					<li id="facebook">
+						<a href="http://www.facebook.com/kendokanorteño">Facebook</a>
+					</li>
+				</ul>
+			</section>
+		</sidebar>
+
+
+	</body>
 </html>
+

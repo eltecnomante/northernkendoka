@@ -43,3 +43,8 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :assets do
+	gem 'sass-rails', '~> 4.0.0'
+	gem 'compass-rails'
+end

@@ -3,7 +3,8 @@
 	<head>
 	  <title>El Kendoka Norteño</title>
 	  <link type="text/css" rel="stylesheet" href="main.css" />
-	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type="text/css"/>
+	  <%= stylesheet_link_tag    "main", media: "all", "data-turbolinks-track" => true %>
 	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	  <%= csrf_meta_tags %>
 
@@ -24,9 +25,11 @@
 			</h2>
 
 		</header>
+
 		<main>
 			<%= yield %>
 		</main>
+		
 		<sidebar>
 			<section id="enlaces">
 				<h3>Referencias</h3>
